@@ -235,7 +235,7 @@ class Pong:
         self.clock = py.time.Clock()  # Init time clock
 
         py.init()
-        py.mixer.init(frequency=22050, size=-16, channels=2, buffer=256)  # Decreased buffer because it lags
+        py.mixer.init(frequency=22050, size=-16, channels=2, buffer=32)  # Decreased buffer because it lags
         py.mixer.music.load("song.mp3")
         py.mixer.music.play(-1)
         self.font = py.font.SysFont("timesnewroman", 24)
